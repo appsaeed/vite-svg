@@ -17,16 +17,18 @@ pnpm install vite-svg
 
 # Usage
 Vite plugin configuration 
+**vite.config.js**
 ````js
+import { defineConfig } from 'vite';
 import viteSVG from 'vite-svg';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    viteSVG()
+    viteSVG({default: 'raw'})
   ],
 });
 ````
-Extract default options is box and now pass json 
+Extract default options in box and now pass JSON 
 ````js
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -50,7 +52,7 @@ console.log(javascript)
     "url": "javascript.svg#"
 }
 ```
-## svg to json
+## SVG to json
 **Extract svg to json with all properties**
 ````js
 import javascript from './javascript.svg?json'
