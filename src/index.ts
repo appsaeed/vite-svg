@@ -51,7 +51,7 @@ export function toBox(id: string) {
 type Options = {
     default?: 'raw' | 'json' | 'box'
 }
-export function viteSvg(options: Options = {}) {
+export default function viteSvg(options: Options = {}) {
     const _default = options?.default || 'json';
     return {
         name: "vite-svg-extract",
