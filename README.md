@@ -26,7 +26,7 @@ export default defineConfig({
   ],
 });
 ````
-default extract 
+Extract default options is box and now pass json 
 ````js
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -73,7 +73,7 @@ console.log(javascript)
 }
 ````
 
-## svg to raw string
+## SVG to raw
 **Extract SVG to raw as string**
 ````js
 import javascript from './javascript.svg?raw'
@@ -83,3 +83,14 @@ console.log(javascript)
 //output example: <svg xmlns="..." xmlns:xlink="..." aria-hidden="true" role="img" class="iconify iconify--logos" width="32" height="32"  viewBox="0 0 256 256"><path fill="#F7DF1E" d="..."></path><path d="....."></path></svg>
 ````
 
+## Author
+**Saeed Hossen**
+
+-   [Website](https://appsaeed.github.io)
+-   [Linkden](https://www.linkedin.com/in/appsaeed)
+-   [Email](appsaeed7@gmail.com)
+
+
+## License
+
+[MIT](LICENSE)
