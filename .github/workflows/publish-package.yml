@@ -4,12 +4,12 @@ on:
 
   # workflow_dispatch:
 
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
-  # release:
-  #   types: [published]
+  release:
+    types: [published]
 
 jobs:
   publish-npm:
