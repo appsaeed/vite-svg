@@ -1,6 +1,6 @@
 {
   "name": "vite-svg",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Vite SVG plugin: effortless SVG import with support for various formats JSON, raw string, object, etc.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

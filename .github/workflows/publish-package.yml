@@ -4,12 +4,12 @@ on:
 
   # workflow_dispatch:
 
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
-  release:
-    types: [published]
+  # release:
+  #   types: [published]
 
 jobs:
   publish-npm:
@@ -39,7 +39,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           # scope: "@appsaeed"
 
-      - run: npm config set registry https://npm.pkg.github.com
       - run: npm install
       - run: npm run build
       - run: |
@@ -54,6 +53,8 @@ jobs:
               };
           })
           EOF
+          
+      - run: npm config set registry https://npm.pkg.github.com
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
