@@ -23,7 +23,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - run: npm config set registry https://registry.npmjs.org
-      - run: npm run install
+      - run: npm install
       - run: npm run build
       - run: npm publish  --access public
         env:
@@ -40,7 +40,7 @@ jobs:
           # scope: "@appsaeed"
 
       - run: npm config set registry https://npm.pkg.github.com
-      - run: npm run install
+      - run: npm install
       - run: npm run build
       - run: |
           node <<EOF
